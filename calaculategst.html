@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 align="center"> GST calculator</h1>
+    <label> Enter amount</label>
+    <input type="text"id="amount">
+    <br>
+    
+    <button onclick="calculateGST()">calculate</button>
+    <h3 id="Gst"></h3>
+    <h3 id="Total"></h3>
+    <script>
+        function calculateGST()
+        {
+           amount=Number(amount.value)
+          var A =(amount*18)/100
+          var B =amount+A
+          Gst.innerHTML="Gst ="+ Number(A)
+          Total.innerHTML="Total= "+ B
+        }
+    </script> 
+</body
+</html>
